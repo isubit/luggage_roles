@@ -1,0 +1,17 @@
+name = global_roles
+description = Roles that should be globally available on all production sites
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = global_roles
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = node
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[user_permission][] = administer nodes
+features[user_role][] = ISUITC admin
+features[user_role][] = content editor
+features[user_role][] = site admin
+features[variable][] = user_admin_role

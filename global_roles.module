@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the global_roles feature.
+ */
+
+include_once 'global_roles.features.inc';

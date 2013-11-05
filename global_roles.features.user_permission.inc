@@ -10,6 +10,51 @@
 function global_roles_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access broken links report'.
+  $permissions['access broken links report'] = array(
+    'name' => 'access broken links report',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'linkchecker',
+  );
+
+  // Exported permission: 'access content overview'.
+  $permissions['access content overview'] = array(
+    'name' => 'access content overview',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'administer blocks'.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'block',
+  );
+
+  // Exported permission: 'administer image styles'.
+  $permissions['administer image styles'] = array(
+    'name' => 'administer image styles',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'image',
+  );
+
+  // Exported permission: 'administer menu'.
+  $permissions['administer menu'] = array(
+    'name' => 'administer menu',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'menu',
+  );
+
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
@@ -17,6 +62,96 @@ function global_roles_user_default_permissions() {
       'content editor' => 'content editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'administer taxonomy'.
+  $permissions['administer taxonomy'] = array(
+    'name' => 'administer taxonomy',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'create page content'.
+  $permissions['create page content'] = array(
+    'name' => 'create page content',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create url aliases'.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'path',
+  );
+
+  // Exported permission: 'delete any page content'.
+  $permissions['delete any page content'] = array(
+    'name' => 'delete any page content',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in tags'.
+  $permissions['delete terms in tags'] = array(
+    'name' => 'delete terms in tags',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit any page content'.
+  $permissions['edit any page content'] = array(
+    'name' => 'edit any page content',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in tags'.
+  $permissions['edit terms in tags'] = array(
+    'name' => 'edit terms in tags',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'view menu options'.
+  $permissions['view menu options'] = array(
+    'name' => 'view menu options',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'jammer',
+  );
+
+  // Exported permission: 'view path options'.
+  $permissions['view path options'] = array(
+    'name' => 'view path options',
+    'roles' => array(
+      'site admin' => 'site admin',
+    ),
+    'module' => 'jammer',
+  );
+
+  // Exported permission: 'view teaser controls'.
+  $permissions['view teaser controls'] = array(
+    'name' => 'view teaser controls',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'jammer',
   );
 
   return $permissions;

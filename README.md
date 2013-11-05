@@ -1,4 +1,4 @@
 global_roles
 ============
 
-Roles that should be globally available on all production sites
+Roles that should be globally available on all production sites.

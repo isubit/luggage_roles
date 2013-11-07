@@ -54,6 +54,203 @@ function global_roles_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page-field_basic_file'
+  $field_instances['node-page-field_basic_file'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_basic_file',
+    'label' => 'Basic File',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'txt pdf doc docx xls xlsx ppt pptx zip',
+      'max_filesize' => '',
+      'mediafront' => array(
+        'custom' => '',
+        'field_type' => 0,
+        'media_type' => 'media',
+        'preview' => 0,
+        'thumbnail' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'insert' => 1,
+        'insert_absolute' => 0,
+        'insert_class' => 'curr-file',
+        'insert_default' => 'icon_link',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_amazing_tab_thumb' => 0,
+          'image_banner' => 0,
+          'image_large' => 0,
+          'image_media_gallery_large' => 0,
+          'image_media_gallery_thumbnail' => 0,
+          'image_medium' => 0,
+          'image_pagerdot' => 0,
+          'image_people_focus_block' => 0,
+          'image_people_full' => 0,
+          'image_people_thumb' => 0,
+          'image_project_thumb' => 0,
+          'image_projects_tab' => 0,
+          'image_social_icons' => 0,
+          'image_square_thumbnail' => 0,
+          'image_student_banner' => 0,
+          'image_superheros_in_training' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_basic_image'
+  $field_instances['node-page-field_basic_image'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_basic_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'mediafront' => array(
+        'custom' => '',
+        'field_type' => 0,
+        'media_type' => 'media',
+        'preview' => 0,
+        'thumbnail' => 0,
+      ),
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'insert' => 1,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'auto',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_banner' => 0,
+          'image_large' => 0,
+          'image_media_gallery_large' => 0,
+          'image_media_gallery_thumbnail' => 0,
+          'image_medium' => 0,
+          'image_projects_tab' => 0,
+          'image_social_icons' => 0,
+          'image_square_thumbnail' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_basic_page_date'
+  $field_instances['node-page-field_basic_page_date'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => 'Date field for sorting. This field does not display on page.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_basic_page_date',
+    'label' => 'date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'display_all_day' => 0,
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-page-field_page_files'
   $field_instances['node-page-field_page_files'] = array(
     'bundle' => 'page',
@@ -176,9 +373,13 @@ function global_roles_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Basic File');
   t('Body');
+  t('Date field for sorting. This field does not display on page.');
   t('File(s)');
+  t('Image');
   t('Image(s)');
+  t('date');
 
   return $field_instances;
 }

@@ -15,6 +15,7 @@ function global_roles_user_default_permissions() {
     'name' => 'access broken links report',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'linkchecker',
   );
@@ -24,6 +25,7 @@ function global_roles_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -58,9 +60,7 @@ function global_roles_user_default_permissions() {
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
-    'roles' => array(
-      'content editor' => 'content editor',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -78,6 +78,7 @@ function global_roles_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -96,6 +97,7 @@ function global_roles_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -105,6 +107,7 @@ function global_roles_user_default_permissions() {
     'name' => 'delete terms in tags',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'taxonomy',
   );
@@ -114,6 +117,7 @@ function global_roles_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -123,8 +127,27 @@ function global_roles_user_default_permissions() {
     'name' => 'edit terms in tags',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'publish any content'.
+  $permissions['publish any content'] = array(
+    'name' => 'publish any content',
+    'roles' => array(
+      'content publisher' => 'content publisher',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish any content'.
+  $permissions['unpublish any content'] = array(
+    'name' => 'unpublish any content',
+    'roles' => array(
+      'content publisher' => 'content publisher',
+    ),
+    'module' => 'publishcontent',
   );
 
   // Exported permission: 'view menu options'.
@@ -150,6 +173,7 @@ function global_roles_user_default_permissions() {
     'name' => 'view teaser controls',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'jammer',
   );

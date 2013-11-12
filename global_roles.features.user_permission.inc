@@ -102,16 +102,6 @@ function global_roles_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in tags'.
-  $permissions['delete terms in tags'] = array(
-    'name' => 'delete terms in tags',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -120,16 +110,6 @@ function global_roles_user_default_permissions() {
       'content publisher' => 'content publisher',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in tags'.
-  $permissions['edit terms in tags'] = array(
-    'name' => 'edit terms in tags',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'publish any content'.

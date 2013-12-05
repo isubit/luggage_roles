@@ -50,47 +50,7 @@ function global_roles_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'node-page-field_keywords'
-  $field_instances['node-page-field_keywords'] = array(
-    'bundle' => 'page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Enter keywords separated by commas. e.g. bat, ball, field, ...',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_keywords',
-    'label' => 'keywords',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -101,10 +61,9 @@ function global_roles_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
+        'label' => 'hidden',
         'settings' => array(),
-        'type' => 'file_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'teaser' => array(
@@ -148,7 +107,7 @@ function global_roles_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -210,17 +169,59 @@ function global_roles_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-page-field_tags'
+  $field_instances['node-page-field_tags'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Add Tags to help users find related content. Enter Tags as a comma delimited string.
+Baseball, bat, glove, ...',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tags',
+    'label' => 'Tags',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 1,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add Tags to help users find related content. Enter Tags as a comma delimited string.
+Baseball, bat, glove, ...');
   t('Body');
-  t('Enter keywords separated by commas. e.g. bat, ball, field, ...');
   t('File(s)');
   t('Image(s)');
-  t('keywords');
+  t('Tags');
 
   return $field_instances;
 }

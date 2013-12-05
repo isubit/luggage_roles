@@ -9,10 +9,10 @@
  */
 function global_roles_taxonomy_default_vocabularies() {
   return array(
-    'keywords' => array(
-      'name' => 'keywords',
-      'machine_name' => 'keywords',
-      'description' => 'Use keywords to group articles on similar topics into categories.',
+    'tags' => array(
+      'name' => 'Tags',
+      'machine_name' => 'tags',
+      'description' => 'Add Tags to help users find related content',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,

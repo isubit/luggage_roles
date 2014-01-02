@@ -7,6 +7,24 @@
 include_once 'global_roles.features.inc';
 
 /**
+ * Implements hook_menu().
+ *
+ * Adds Broken Links menu item to toolbar.
+ */
+function global_roles_menu() {
+  $items['admin/linkchecker'] = array(
+    'access arguments' => array('access broken links report'),
+    'description' => 'Shows a list of broken links in content.',
+    'file' => 'linkchecker.pages.inc',
+    'file path' => drupal_get_path('module', 'linkchecker'),
+    'page callback' => 'linkchecker_admin_report_page',
+    'title' => 'Broken links',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+/**
  * Implements hook_update_projects_alter().
  */
 function global_roles_update_projects_alter(&$projects) {

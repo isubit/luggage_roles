@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.taxonomy.inc
+ * luggage_roles.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function global_roles_taxonomy_default_vocabularies() {
+function luggage_roles_taxonomy_default_vocabularies() {
   return array(
     'tags' => array(
       'name' => 'Tags',

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.strongarm.inc
+ * luggage_roles.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function global_roles_strongarm() {
+function luggage_roles_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

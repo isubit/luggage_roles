@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.user_permission.inc
+ * luggage_roles.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function global_roles_user_default_permissions() {
+function luggage_roles_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access broken links report'.

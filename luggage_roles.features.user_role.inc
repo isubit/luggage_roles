@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.user_role.inc
+ * luggage_roles.features.user_role.inc
  */
 
 /**
  * Implements hook_user_default_roles().
  */
-function global_roles_user_default_roles() {
+function luggage_roles_user_default_roles() {
   $roles = array();
 
   // Exported role: ISUITC admin.

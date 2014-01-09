@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.inc
+ * luggage_roles.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function global_roles_ctools_plugin_api($module = NULL, $api = NULL) {
+function luggage_roles_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,7 +16,7 @@ function global_roles_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function global_roles_node_info() {
+function luggage_roles_node_info() {
   $items = array(
     'page' => array(
       'name' => t('Basic page'),

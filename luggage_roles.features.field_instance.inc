@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.field_instance.inc
+ * luggage_roles.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function global_roles_field_default_field_instances() {
+function luggage_roles_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'node-page-body'

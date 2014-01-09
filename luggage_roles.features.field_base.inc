@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * global_roles.features.field_base.inc
+ * luggage_roles.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function global_roles_field_default_field_bases() {
+function luggage_roles_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'

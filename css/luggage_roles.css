@@ -1,9 +1,9 @@
 /*-------tags-------*/
-.field-name-field-tags .field-label{
+.node-page .field-name-field-tags .field-label{
   opacity:0.4;
 }
 
-.field-name-field-tags .field-item{
+.node-page .field-name-field-tags .field-item{
   opacity:0.4;
   padding-right: .7em;
 }

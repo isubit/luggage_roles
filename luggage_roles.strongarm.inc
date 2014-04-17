@@ -20,16 +20,16 @@ function luggage_roles_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'diff_standard' => array(
         'custom_settings' => FALSE,
@@ -37,23 +37,26 @@ function luggage_roles_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '10',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '9',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '7',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '8',
         ),
       ),
       'display' => array(),
@@ -83,6 +86,7 @@ function luggage_roles_strongarm() {
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_page'] = $strongarm;
 

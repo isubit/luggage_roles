@@ -1,0 +1,17 @@
+name = luggage_roles_solr
+description = overrides to integrate roles with solr
+core = 7.x
+package = Luggage
+version = 7.x-2.0
+project = luggage_roles_solr
+dependencies[] = luggage_roles
+features[features_api][] = api:2
+features[features_override_items][] = field_instance.node-page-field_category
+features[features_override_items][] = field_instance.node-page-field_tags
+features[features_overrides][] = field_instance.node-page-field_category.display|default|module
+features[features_overrides][] = field_instance.node-page-field_category.display|default|settings|path
+features[features_overrides][] = field_instance.node-page-field_category.display|default|settings|target
+features[features_overrides][] = field_instance.node-page-field_category.display|default|type
+features[features_overrides][] = field_instance.node-page-field_tags.display|default|module
+features[features_overrides][] = field_instance.node-page-field_tags.display|default|settings
+features[features_overrides][] = field_instance.node-page-field_tags.display|default|type

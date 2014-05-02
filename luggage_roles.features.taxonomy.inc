@@ -9,9 +9,9 @@
  */
 function luggage_roles_taxonomy_default_vocabularies() {
   return array(
-    'categories' => array(
-      'name' => 'Categories',
-      'machine_name' => 'categories',
+    'category' => array(
+      'name' => 'Category',
+      'machine_name' => 'category',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

@@ -1,0 +1,14 @@
+name = luggage_roles_solr
+description = overrides to integrate roles with solr
+core = 7.x
+package = Luggage
+version = 7.x-2.2
+project = luggage_roles_solr
+dependencies[] = ctools
+dependencies[] = entity_path
+dependencies[] = luggage_roles
+dependencies[] = luggage_solr
+features[ctools][] = entity_path:entity_path:1
+features[entity_path_config][] = taxonomy_term:categories
+features[entity_path_config][] = taxonomy_term:tags
+features[features_api][] = api:2

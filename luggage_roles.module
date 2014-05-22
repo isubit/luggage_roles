@@ -65,3 +65,11 @@ function _luggage_roles_insert_after_first_element(&$a, $element) {
     array_unshift($a, $first_element, $element);
   }
 }
+
+function luggage_roles_form_alter(&$form, &$form_state, $form_id) {
+  global $user;
+
+  if($user->uid > 1)) {
+    unset($form['revision_information']);
+  }
+}

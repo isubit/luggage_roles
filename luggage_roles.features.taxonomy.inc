@@ -12,10 +12,10 @@ function luggage_roles_taxonomy_default_vocabularies() {
     'category' => array(
       'name' => 'Category',
       'machine_name' => 'category',
-      'description' => '',
+      'description' => 'Primary site organization. All content must have at least one category tag.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -10,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -35,10 +35,10 @@ function luggage_roles_taxonomy_default_vocabularies() {
     'tags' => array(
       'name' => 'Tags',
       'machine_name' => 'tags',
-      'description' => 'Add Tags to help users find related content',
+      'description' => 'Secondary site organization. All content must have at least one tag. Tags have no moderation.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => -7,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',

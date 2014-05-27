@@ -133,18 +133,14 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'view menu options'.
   $permissions['view menu options'] = array(
     'name' => 'view menu options',
-    'roles' => array(
-      'site admin' => 'site admin',
-    ),
+    'roles' => array(),
     'module' => 'jammer',
   );
 
   // Exported permission: 'view path options'.
   $permissions['view path options'] = array(
     'name' => 'view path options',
-    'roles' => array(
-      'site admin' => 'site admin',
-    ),
+    'roles' => array(),
     'module' => 'jammer',
   );
 

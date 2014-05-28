@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the luggage_roles_solr feature.
- */
-
-include_once 'luggage_roles_solr.features.inc';

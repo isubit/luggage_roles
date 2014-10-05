@@ -66,6 +66,15 @@ function luggage_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'administer scheduler'.
+  $permissions['administer scheduler'] = array(
+    'name' => 'administer scheduler',
+    'roles' => array(
+      'luggage admin' => 'luggage admin',
+    ),
+    'module' => 'scheduler',
+  );
+
   // Exported permission: 'administer taxonomy'.
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
@@ -121,6 +130,16 @@ function luggage_roles_user_default_permissions() {
       'content publisher' => 'content publisher',
     ),
     'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'schedule (un)publishing of nodes'.
+  $permissions['schedule (un)publishing of nodes'] = array(
+    'name' => 'schedule (un)publishing of nodes',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+      'content publisher' => 'content publisher',
+    ),
+    'module' => 'scheduler',
   );
 
   // Exported permission: 'unpublish any content'.

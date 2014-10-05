@@ -22,16 +22,6 @@ function luggage_roles_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: 'access broken links report'.
-  $permissions['access broken links report'] = array(
-    'name' => 'access broken links report',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
-    'module' => 'linkchecker',
-  );
-
   // Exported permission: 'access content overview'.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',

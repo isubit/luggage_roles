@@ -50,6 +50,7 @@ function luggage_roles_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['metatags'] = FALSE;
   $handler->display->display_options['path'] = 'categories';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = '≡';
@@ -132,6 +133,7 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['arguments']['name']['path_case'] = 'lower';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
+  $handler->display->display_options['defaults']['metatags'] = FALSE;
   $handler->display->display_options['path'] = 'site-index';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Site Index';
@@ -163,6 +165,7 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['arguments']['name']['limit'] = '1';
   $handler->display->display_options['arguments']['name']['case'] = 'upper';
   $handler->display->display_options['arguments']['name']['path_case'] = 'upper';
+  $handler->display->display_options['defaults']['metatags'] = FALSE;
   $handler->display->display_options['displays'] = array(
     'default' => 'default',
     'page' => 'page',

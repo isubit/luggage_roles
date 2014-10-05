@@ -10,10 +10,10 @@
 function luggage_roles_user_default_roles() {
   $roles = array();
 
-  // Exported role: ISUITC admin.
-  $roles['ISUITC admin'] = array(
-    'name' => 'ISUITC admin',
-    'weight' => 5,
+  // Exported role: access admin.
+  $roles['access admin'] = array(
+    'name' => 'access admin',
+    'weight' => 4,
   );
 
   // Exported role: content editor.
@@ -26,6 +26,12 @@ function luggage_roles_user_default_roles() {
   $roles['content publisher'] = array(
     'name' => 'content publisher',
     'weight' => 3,
+  );
+
+  // Exported role: luggage admin.
+  $roles['luggage admin'] = array(
+    'name' => 'luggage admin',
+    'weight' => 6,
   );
 
   // Exported role: site admin.

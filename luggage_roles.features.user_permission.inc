@@ -10,6 +10,18 @@
 function luggage_roles_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access administration menu'.
+  $permissions['access administration menu'] = array(
+    'name' => 'access administration menu',
+    'roles' => array(
+      'access admin' => 'access admin',
+      'authenticated user' => 'authenticated user',
+      'luggage admin' => 'luggage admin',
+      'site admin' => 'site admin',
+    ),
+    'module' => 'admin_menu',
+  );
+
   // Exported permission: 'access broken links report'.
   $permissions['access broken links report'] = array(
     'name' => 'access broken links report',

@@ -122,7 +122,7 @@ function luggage_roles_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'publishcontent_method';
-  $strongarm->value = '0';
+  $strongarm->value = '3';
   $export['publishcontent_method'] = $strongarm;
 
   $strongarm = new stdClass();

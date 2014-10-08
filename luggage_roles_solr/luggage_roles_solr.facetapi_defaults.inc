@@ -72,6 +72,8 @@ function luggage_roles_solr_facetapi_default_facet_settings() {
       'format' => 'wysiwyg',
     ),
     'submit_realm' => 'Save and go back to realm settings',
+    'facet_more_text' => 'Show more',
+    'facet_fewer_text' => 'Show fewer',
   );
   $export['apachesolr@solr:block:im_field_category'] = $facet;
 

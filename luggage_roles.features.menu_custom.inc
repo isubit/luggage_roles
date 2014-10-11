@@ -18,8 +18,8 @@ function luggage_roles_menu_default_menu_custom() {
   );
   // Exported menu: menu-footer-menu.
   $menus['menu-footer'] = array(
-    'menu_name' => 'menu-footer-menu',
-    'title' => 'Footer Menu',
+    'menu_name' => 'menu-footer',
+    'title' => 'Footer',
     'description' => 'Menu for the footer',
   );
   // Translatables

@@ -188,7 +188,7 @@ function luggage_roles_views_default_views() {
 
   /* Display: My Content */
   $handler = $view->new_display('page', 'My Content', 'page');
-  $handler->display->display_options['path'] = 'my/conent';
+  $handler->display->display_options['path'] = 'my/content';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'My Content';
   $handler->display->display_options['menu']['weight'] = '0';

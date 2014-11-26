@@ -118,7 +118,7 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['label'] = 'Empty view text';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'You have not yet created content. Please <a href="/node/add" >Add Content</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'You have not yet created content. Please <a href="/node/add">Add Content</a>';
   $handler->display->display_options['empty']['area']['format'] = 'wysiwyg';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';

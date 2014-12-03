@@ -73,3 +73,13 @@ function luggage_roles_form_alter(&$form, &$form_state, $form_id) {
     unset($form['revision_information']);
   }
 }
+
+/**
+ *  Implements hook_field_widget_form_alter()
+ */
+function luggage_roles_field_widget_form_alter(&$element, &$form_state, $context) {
+  // Update the label on image fields that take more than one value from "Add a new file" to "Add a new image"
+  if($context['instance']['widget']['module'] == "image" && ($context['field']['cardinality'] > 1 || $context['field']['cardinality'] == -1)) {
+    $element['#file_upload_title'] = "Add a new image";
+  }
+}

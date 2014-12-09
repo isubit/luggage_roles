@@ -83,3 +83,12 @@ function luggage_roles_field_widget_form_alter(&$element, &$form_state, $context
     $element['#file_upload_title'] = "Add a new image";
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK()
+ * Working around debugging informaiton added by Drupal 7.33
+ * https://www.drupal.org/node/2385835
+ */
+function luggage_roles_preprocess_ds_search_page(&$vars) {
+  unset($vars['theme_hook_original']);
+}

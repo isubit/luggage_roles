@@ -61,7 +61,7 @@ function luggage_roles_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'My Posts';
+  $view->human_name = 'My Content';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -70,7 +70,10 @@ function luggage_roles_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'My Content';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    2 => '2',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -79,7 +82,7 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'field_resouce_description' => 'field_resouce_description',
+    'field_resource_description' => 'field_resource_description',
     'field_uri' => 'field_uri',
     'field_tags' => 'field_tags',
   );
@@ -92,7 +95,7 @@ function luggage_roles_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_resouce_description' => array(
+    'field_resource_description' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => 'views-align-left',
@@ -118,7 +121,7 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['label'] = 'Empty view text';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'You have not yet created content. Please <a href="/node/add" >Add Content</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'You have not yet created content. Please <a href="/node/add">Add Content</a>';
   $handler->display->display_options['empty']['area']['format'] = 'wysiwyg';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';

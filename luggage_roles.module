@@ -45,7 +45,7 @@ function luggage_roles_preprocess_page(&$vars) {
 /**
  * Implements hook_theme_registry_alter()
  **/
-function global_roles_theme_registry_alter(&$theme_registry) {
+function luggage_roles_theme_registry_alter(&$theme_registry) {
   $mod_path = drupal_get_path('module', 'luggage_roles');
   $theme_registry_copy = $theme_registry;       // munge on a copy
   _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', 'pow', $mod_path);

@@ -14,10 +14,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
-      'access admin' => 'access admin',
       'authenticated user' => 'authenticated user',
-      'luggage admin' => 'luggage admin',
-      'site admin' => 'site admin',
     ),
     'module' => 'admin_menu',
   );
@@ -27,7 +24,6 @@ function luggage_roles_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -51,10 +47,7 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
-    'roles' => array(
-      'luggage admin' => 'luggage admin',
-      'site admin' => 'site admin',
-    ),
+    'roles' => array(),
     'module' => 'image',
   );
 
@@ -71,7 +64,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      'luggage admin' => 'luggage admin',
+      'content editor' => 'content editor',
       'site admin' => 'site admin',
     ),
     'module' => 'node',
@@ -80,9 +73,7 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'administer scheduler'.
   $permissions['administer scheduler'] = array(
     'name' => 'administer scheduler',
-    'roles' => array(
-      'luggage admin' => 'luggage admin',
-    ),
+    'roles' => array(),
     'module' => 'scheduler',
   );
 
@@ -90,8 +81,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      'luggage admin' => 'luggage admin',
-      'site admin' => 'site admin',
+      'taxonomy editor' => 'taxonomy editor',
     ),
     'module' => 'taxonomy',
   );
@@ -110,8 +100,6 @@ function luggage_roles_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -120,7 +108,6 @@ function luggage_roles_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
-      'content publisher' => 'content publisher',
       'site admin' => 'site admin',
     ),
     'module' => 'path',
@@ -129,9 +116,7 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
-    'roles' => array(
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -147,28 +132,21 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'delete terms in category'.
   $permissions['delete terms in category'] = array(
     'name' => 'delete terms in category',
-    'roles' => array(
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
-    'roles' => array(
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -184,20 +162,14 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'edit terms in category'.
   $permissions['edit terms in category'] = array(
     'name' => 'edit terms in category',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
-    'roles' => array(
-      'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
-    ),
+    'roles' => array(),
     'module' => 'taxonomy',
   );
 
@@ -205,7 +177,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['publish any content'] = array(
     'name' => 'publish any content',
     'roles' => array(
-      'content publisher' => 'content publisher',
+      'content editor' => 'content editor',
     ),
     'module' => 'publishcontent',
   );
@@ -215,7 +187,6 @@ function luggage_roles_user_default_permissions() {
     'name' => 'schedule (un)publishing of nodes',
     'roles' => array(
       'authenticated user' => 'authenticated user',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'scheduler',
   );
@@ -238,7 +209,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['unpublish any content'] = array(
     'name' => 'unpublish any content',
     'roles' => array(
-      'content publisher' => 'content publisher',
+      'content editor' => 'content editor',
     ),
     'module' => 'publishcontent',
   );
@@ -263,7 +234,6 @@ function luggage_roles_user_default_permissions() {
     'roles' => array(
       'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'jammer',
   );

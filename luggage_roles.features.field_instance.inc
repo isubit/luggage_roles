@@ -292,7 +292,7 @@ function luggage_roles_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => 675,
+        'insert_width' => 300,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),

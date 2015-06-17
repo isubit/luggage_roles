@@ -64,7 +64,6 @@ function luggage_roles_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
-      'content editor' => 'content editor',
       'site admin' => 'site admin',
     ),
     'module' => 'node',
@@ -81,7 +80,7 @@ function luggage_roles_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      'taxonomy editor' => 'taxonomy editor',
+      'site admin' => 'site admin',
     ),
     'module' => 'taxonomy',
   );
@@ -116,7 +115,9 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
-    'roles' => array(),
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
     'module' => 'node',
   );
 
@@ -132,21 +133,27 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'delete terms in category'.
   $permissions['delete terms in category'] = array(
     'name' => 'delete terms in category',
-    'roles' => array(),
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
-    'roles' => array(),
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
-    'roles' => array(),
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
     'module' => 'node',
   );
 
@@ -162,14 +169,18 @@ function luggage_roles_user_default_permissions() {
   // Exported permission: 'edit terms in category'.
   $permissions['edit terms in category'] = array(
     'name' => 'edit terms in category',
-    'roles' => array(),
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
-    'roles' => array(),
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
     'module' => 'taxonomy',
   );
 

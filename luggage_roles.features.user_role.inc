@@ -22,5 +22,11 @@ function luggage_roles_user_default_roles() {
     'weight' => 4,
   );
 
+  // Exported role: taxonomy editor.
+  $roles['taxonomy editor'] = array(
+    'name' => 'taxonomy editor',
+    'weight' => 5,
+  );
+
   return $roles;
 }

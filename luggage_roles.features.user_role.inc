@@ -19,13 +19,13 @@ function luggage_roles_user_default_roles() {
   // Exported role: site admin.
   $roles['site admin'] = array(
     'name' => 'site admin',
-    'weight' => 4,
+    'weight' => 6,
   );
 
   // Exported role: taxonomy editor.
   $roles['taxonomy editor'] = array(
     'name' => 'taxonomy editor',
-    'weight' => 5,
+    'weight' => 4,
   );
 
   return $roles;

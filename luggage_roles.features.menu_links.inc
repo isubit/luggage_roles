@@ -27,10 +27,10 @@ function luggage_roles_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('≡');
-
 
   return $menu_links;
 }

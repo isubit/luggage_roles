@@ -85,6 +85,15 @@ function luggage_roles_user_default_permissions() {
     'module' => 'scheduler',
   );
 
+  // Exported permission: 'administer taxonomy'.
+  $permissions['administer taxonomy'] = array(
+    'name' => 'administer taxonomy',
+    'roles' => array(
+      'taxonomy editor' => 'taxonomy editor',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',

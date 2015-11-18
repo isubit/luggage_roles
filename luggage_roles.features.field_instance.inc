@@ -10,7 +10,7 @@
 function luggage_roles_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
+  // Exported field_instance: 'node-page-body'.
   $field_instances['node-page-body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -77,7 +77,7 @@ function luggage_roles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_category'
+  // Exported field_instance: 'node-page-field_category'.
   $field_instances['node-page-field_category'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
@@ -136,7 +136,7 @@ function luggage_roles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_page_files'
+  // Exported field_instance: 'node-page-field_page_files'.
   $field_instances['node-page-field_page_files'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -213,7 +213,7 @@ function luggage_roles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_page_image'
+  // Exported field_instance: 'node-page-field_page_image'.
   $field_instances['node-page-field_page_image'] = array(
     'bundle' => 'page',
     'deleted' => 0,
@@ -301,7 +301,7 @@ function luggage_roles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_tags'
+  // Exported field_instance: 'node-page-field_tags'.
   $field_instances['node-page-field_tags'] = array(
     'bundle' => 'page',
     'default_value' => NULL,

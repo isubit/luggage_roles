@@ -166,6 +166,15 @@ function luggage_roles_user_default_permissions() {
     'module' => 'publishcontent',
   );
 
+  // Exported permission: 'publish editable content'.
+  $permissions['publish editable content'] = array(
+    'name' => 'publish editable content',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'publishcontent',
+  );
+
   // Exported permission: 'schedule (un)publishing of nodes'.
   $permissions['schedule (un)publishing of nodes'] = array(
     'name' => 'schedule (un)publishing of nodes',
@@ -194,6 +203,15 @@ function luggage_roles_user_default_permissions() {
     'name' => 'unpublish any content',
     'roles' => array(
       'content editor' => 'content editor',
+    ),
+    'module' => 'publishcontent',
+  );
+
+  // Exported permission: 'unpublish editable content'.
+  $permissions['unpublish editable content'] = array(
+    'name' => 'unpublish editable content',
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'publishcontent',
   );

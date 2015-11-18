@@ -10,7 +10,7 @@
 function luggage_roles_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_:categories
+  // Exported menu link: main-menu_:categories.
   $menu_links['main-menu_:categories'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'categories',

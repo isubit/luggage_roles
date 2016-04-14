@@ -207,6 +207,24 @@ function luggage_roles_user_default_permissions() {
     'module' => 'publishcontent',
   );
 
+  // Exported permission: 'view any unpublished content'.
+  $permissions['view any unpublished content'] = array(
+    'name' => 'view any unpublished content',
+    'roles' => array(
+      'content editor' => 'content editor',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: 'view any unpublished people content'.
+  $permissions['view any unpublished people content'] = array(
+    'name' => 'view any unpublished people content',
+    'roles' => array(
+      'people editor' => 'people editor',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: 'unpublish editable content'.
   $permissions['unpublish editable content'] = array(
     'name' => 'unpublish editable content',

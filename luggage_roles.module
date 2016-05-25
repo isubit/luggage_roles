@@ -32,15 +32,6 @@ function luggage_roles_update_projects_alter(&$projects) {
   unset($projects['luggage_roles']);
 }
 
-// Adds CSS to view display of page node type but not the edit display
-function luggage_roles_preprocess_page(&$vars) {
-  // Global node.
-  $node = menu_get_object();
-  if (!empty($node) && $node->type == 'page' && arg(2) === null) {
-    drupal_add_css(drupal_get_path('module', 'luggage_roles') . '/css/luggage_roles.css');
-  }
-}
-
 // Adding support to discover template files
 /**
  * Implements hook_theme_registry_alter()

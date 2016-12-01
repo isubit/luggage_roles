@@ -16,6 +16,12 @@ function luggage_roles_menu_default_menu_custom() {
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
   );
+  // Exported menu: menu-categories-mega-menu.
+  $menus['menu-categories-mega-menu'] = array(
+    'menu_name' => 'menu-categories-mega-menu',
+    'title' => 'Categories Mega Menu',
+    'description' => '',
+  );
   // Exported menu: menu-footer.
   $menus['menu-footer'] = array(
     'menu_name' => 'menu-footer',
@@ -24,6 +30,7 @@ function luggage_roles_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Categories Mega Menu');
   t('Footer');
   t('Main menu');
   t('Menu for the footer');

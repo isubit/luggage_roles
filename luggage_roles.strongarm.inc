@@ -207,27 +207,6 @@ function luggage_roles_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_expanded_category';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_expanded_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_sync_category';
-  $strongarm->value = 1;
-  $export['taxonomy_menu_sync_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'taxonomy_menu_vocab_menu_category';
-  $strongarm->value = 'menu-categories-mega-menu';
-  $export['taxonomy_menu_vocab_menu_category'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
   $strongarm->value = '0';
   $export['user_admin_role'] = $strongarm;

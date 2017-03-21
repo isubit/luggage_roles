@@ -21,6 +21,14 @@ function luggage_roles_menu() {
     'title' => 'Broken links',
     'type' => MENU_NORMAL_ITEM,
   );
+
+  $items['http://www.biology-it.iastate.edu/luggage_doc/guide'] = array(
+    'title' => t('Tutorials'),
+    'type' => MENU_NORMAL_ITEM,
+    'weight' => 50,
+    'access arguments' => array('access administration menu'),
+    'menu_name' => 'management',
+  );
   return $items;
 }
 

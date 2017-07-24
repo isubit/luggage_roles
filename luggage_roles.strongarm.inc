@@ -89,6 +89,12 @@ function luggage_roles_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'front_page_block' => array(
+        'custom_settings' => TRUE,
+      ),
+      'frontpanel' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

@@ -320,11 +320,9 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
   $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['name']['summary']['format'] = 'unformatted_summary';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['name']['summary_options']['count'] = FALSE;
   $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['name']['summary_options']['inline'] = TRUE;
-  $handler->display->display_options['arguments']['name']['summary_options']['separator'] = '|';
   $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['name']['glossary'] = TRUE;
   $handler->display->display_options['arguments']['name']['limit'] = '1';

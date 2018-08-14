@@ -309,8 +309,18 @@ function luggage_roles_views_default_views() {
 
   /* Display: Attachment */
   $handler = $view->new_display('attachment', 'Attachment', 'site_index_pager');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'site-index';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Taxonomy term: Name */
@@ -320,11 +330,9 @@ function luggage_roles_views_default_views() {
   $handler->display->display_options['arguments']['name']['default_action'] = 'summary';
   $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['name']['summary']['format'] = 'unformatted_summary';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['name']['summary_options']['count'] = FALSE;
   $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['name']['summary_options']['inline'] = TRUE;
-  $handler->display->display_options['arguments']['name']['summary_options']['separator'] = '|';
   $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['name']['glossary'] = TRUE;
   $handler->display->display_options['arguments']['name']['limit'] = '1';
